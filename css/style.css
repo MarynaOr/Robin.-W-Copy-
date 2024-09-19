@@ -1,0 +1,154 @@
+/* #region general properties */
+
+body {
+  font-family: "sen", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 1296px) {
+  .container {
+    max-width: 1296px;
+    padding: 0 72px;
+  }
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* #endregion general properties */
+
+/* #region header */
+
+.header-con {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo-con {
+  width: 78px;
+  padding: 24px 0;
+}
+
+.logo-header {
+  fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo-con {
+    padding: 32px 0;
+  }
+}
+
+.sidebar {
+}
+
+@media screen and (min-width: 1296px) {
+  .sidebar {
+    width: 900px;
+    right: 0;
+    top: 0;
+    height: 900px;
+    position: absolute;
+    background-color: #181823;
+  }
+}
+
+.mob-btn-is-open {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.current {
+  position: relative;
+}
+
+.current::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  background-color: #c4c4c4;
+  top: 6px;
+  left: 3px;
+  right: 3px;
+  display: block;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+
+  left: 8px;
+  bottom: 7px;
+  width: 13px;
+  height: 3px;
+
+  display: block;
+  background-color: #c4c4c4;
+}
+/* #endregion header */
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1296px) {
+}
