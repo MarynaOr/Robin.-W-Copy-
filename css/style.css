@@ -168,28 +168,56 @@ button {
 }
 
 .mob-nav {
-    
 }
 
 .mob-close {
-    background-color: transparent; 
-    border-radius: 100%;
-    border: none;
-    position: absolute;
-top: 30px;
-right: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mob-close:hover,
 .mob-close:focus {
-    background-color: #000;
+  background-color: #000;
 }
 
-
 .mob-icon-close {
+  stroke: #fff;
+}
 
-stroke: #fff;
+.mob-list {
+  font-weight: 700;
+  font-size: 16px;
 
+  line-height: 1.5;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 120px;
+}
+
+.mob-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  min-height: 70px;
+}
+
+.mob-item:hover,
+.mob-item:focus {
+  background-color: #5221e6;
+  cursor: grab;
 }
 
 /* #endregion header */
