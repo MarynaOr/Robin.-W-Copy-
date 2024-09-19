@@ -145,6 +145,53 @@ button {
   display: block;
   background-color: #c4c4c4;
 }
+
+.mob-menu {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  background-color: #181823;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mob-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.mob-nav {
+    
+}
+
+.mob-close {
+    background-color: transparent; 
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+top: 30px;
+right: 30px;
+}
+
+.mob-close:hover,
+.mob-close:focus {
+    background-color: #000;
+}
+
+
+.mob-icon-close {
+
+stroke: #fff;
+
+}
+
 /* #endregion header */
 
 @media screen and (min-width: 768px) {
