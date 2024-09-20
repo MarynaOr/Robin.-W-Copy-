@@ -96,12 +96,12 @@ button {
   }
 }
 
-.sidebar {
-}
+
 
 @media screen and (min-width: 1296px) {
   .sidebar {
-    width: 900px;
+    max-width: 900px;
+    left: 540px;
     right: 0;
     top: 0;
     height: 900px;
@@ -110,12 +110,55 @@ button {
   }
 }
 
+
+@media screen and (max-width: 767px) {
+    .nav-item, .nav-list {
+    display: none;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+   .nav-list {
+display: flex;
+
+
+   }
+
+   .nav-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 32px 24px;
+   }
+}
+
+
+@media screen and (min-width: 1296px) {
+    .nav-list {
+        justify-content: flex-end;
+     margin-right: 72px;
+    }
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    background-color:  #5221e6;
+}
+
 .mob-btn-is-open {
   width: 24px;
   height: 24px;
   background-color: transparent;
   border: none;
 }
+
+@media screen and (min-width: 768px) {
+    .mob-btn-is-open {
+        display: none;
+    }
+}
+
 
 .current {
   position: relative;
