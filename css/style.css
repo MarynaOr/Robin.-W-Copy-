@@ -259,13 +259,16 @@ button {
 
 .hero-con {
   margin-bottom: 48px;
+ 
 }
 .img-hero {
   width: 100%;
+ 
 }
 
 .hero-con-text {
   padding: 0 20px;
+  margin-bottom: 48px;
 }
 .hero-title {
   font-weight: 700;
@@ -284,6 +287,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+
+    height: 814px;
+  }
   .hero-con {
     position: absolute;
     z-index: 1;
@@ -313,6 +320,9 @@ button {
 }
 
 @media screen and (min-width: 1296px) {
+  .hero {
+    height: 808px
+  }
   .img-hero {
     width: 750px;
     height: 650px;
@@ -332,6 +342,87 @@ button {
 }
 
 /* #endregion hero */
+
+/* #region work experience */
+
+.work {
+  border-top: 1px dashed #c4c4c4;
+}
+
+@media screen and (min-width: 768px) {
+  .work {
+    border-top: none ;
+  }
+  
+}
+
+
+@media screen and (min-width: 1296px) {
+  .work {
+    border-top: 1px dashed #c4c4c4;
+  }
+}
+
+
+.work-title {
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5;
+text-transform: uppercase;
+color: #8491a0;
+padding-top: 48px;
+
+margin-bottom: 8px;
+}
+
+.work-text {
+ 
+font-weight: 700;
+font-size: 32px;
+
+margin-bottom: 40px;
+}
+
+.work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.work-number {
+font-weight: 400;
+font-size: 117px;
+color: #8491a0;
+}
+
+.work-title-item-one {
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+color: #3cc74e;
+}
+
+.work-span {
+  color: #fff;
+}
+
+.work-title-item-two {
+  font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+  color: #609bff;
+}
+
+.work-title-item-three {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #e95d90;
+}
+
+
+/* #endregion work experience */
 
 @media screen and (min-width: 768px) {
 }
