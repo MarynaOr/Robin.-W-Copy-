@@ -35,11 +35,11 @@
           </div>
           <nav class="sidebar header-nav">
             <ul class="nav-list">
-                <li class="nav-item">Experience</li>
-                <li class="nav-item">Work</li>
-                <li class="nav-item">Photography</li>
-                <li class="nav-item">Contact</li>
-              </ul>
+              <li class="nav-item">Experience</li>
+              <li class="nav-item">Work</li>
+              <li class="nav-item">Photography</li>
+              <li class="nav-item">Contact</li>
+            </ul>
           </nav>
           <button type="button" class="mob-btn-is-open current"></button>
         </div>
@@ -60,5 +60,53 @@
         </div>
       </div>
     </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-con">
+          <picture class="img-hero">
+            <source
+              srcset="
+                ./img/images/hero-desk.jpg    1x,
+                ./img/images/hero-desk-2x.jpg 2x
+              "
+              media="(min-width:1296px)"
+            />
+            <source
+              srcset="
+                ./img/images/hero-tab.jpg    1x,
+                ./img/images/hero-tab-2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./img/images/hero-mob.jpg    1x,
+                ./img/images/hero-mob-2x.jpg 2x
+              "
+            />
+
+            <img
+              src="./img/images/hero-desk.jpg"
+              alt="Robin"
+              width="750"
+              height="650"
+            />
+          </picture>
+        </div>
+        <div class="hero-con-text">
+          <h1 class="hero-title">
+            I’m Robin Williams. A Product Designer
+            <span class="hero-span">based in Italy.</span>
+          </h1>
+          <p class="hero-text">
+            I’m probably the most passionate designer you will ever get to work
+            with. If you have a great project that needs some amazing skills,
+            I’m your guy.
+          </p>
+        </div>
+      </section>
+      
+    </main>
   </body>
 </html>

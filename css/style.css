@@ -96,8 +96,6 @@ button {
   }
 }
 
-
-
 @media screen and (min-width: 1296px) {
   .sidebar {
     max-width: 900px;
@@ -110,40 +108,36 @@ button {
   }
 }
 
-
 @media screen and (max-width: 767px) {
-    .nav-item, .nav-list {
+  .nav-item,
+  .nav-list {
     display: none;
+  }
 }
-}
-
 
 @media screen and (min-width: 768px) {
-   .nav-list {
-display: flex;
+  .nav-list {
+    display: flex;
+  }
 
-
-   }
-
-   .nav-item {
+  .nav-item {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     padding: 32px 24px;
-   }
+  }
 }
 
-
 @media screen and (min-width: 1296px) {
-    .nav-list {
-        justify-content: flex-end;
-     margin-right: 72px;
-    }
+  .nav-list {
+    justify-content: flex-end;
+    margin-right: 72px;
+  }
 }
 
 .nav-item:hover,
 .nav-item:focus {
-    background-color:  #5221e6;
+  background-color: #5221e6;
 }
 
 .mob-btn-is-open {
@@ -154,11 +148,10 @@ display: flex;
 }
 
 @media screen and (min-width: 768px) {
-    .mob-btn-is-open {
-        display: none;
-    }
+  .mob-btn-is-open {
+    display: none;
+  }
 }
-
 
 .current {
   position: relative;
@@ -208,9 +201,6 @@ display: flex;
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-}
-
-.mob-nav {
 }
 
 .mob-close {
@@ -264,6 +254,84 @@ display: flex;
 }
 
 /* #endregion header */
+
+/* #region hero */
+
+.hero-con {
+  margin-bottom: 48px;
+}
+.img-hero {
+  width: 100%;
+}
+
+.hero-con-text {
+  padding: 0 20px;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.hero-span {
+  color: rgba(255, 255, 255, 0.5);
+}
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-con {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  .img-hero {
+    width: 384px;
+    height: 650px;
+  }
+
+  .hero-con-text {
+    display: flex;
+
+    flex-direction: column;
+    position: absolute;
+    z-index: 9;
+    max-width: 408px;
+    padding: 0;
+    left: 320px;
+    margin-top: 167px;
+  }
+  .hero-title {
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 1296px) {
+  .img-hero {
+    width: 750px;
+    height: 650px;
+  }
+
+  .hero-con-text {
+    max-width: 738px;
+    left: 662px;
+    margin-top: 221px;
+  }
+
+  .hero-title {
+    font-size: 78px;
+
+    margin-bottom: 30px;
+  }
+}
+
+/* #endregion hero */
 
 @media screen and (min-width: 768px) {
 }
