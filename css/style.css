@@ -267,7 +267,7 @@ button {
 }
 
 .hero-con-text {
-  padding: 0 20px;
+ 
   margin-bottom: 48px;
 }
 .hero-title {
@@ -390,6 +390,8 @@ margin-bottom: 40px;
   gap: 40px;
 }
 
+
+
 .work-number {
 font-weight: 400;
 font-size: 117px;
@@ -401,6 +403,7 @@ font-weight: 700;
 font-size: 24px;
 line-height: 1.5;
 color: #3cc74e;
+margin-bottom: 16px;
 }
 
 .work-span {
@@ -412,6 +415,7 @@ color: #3cc74e;
 font-size: 24px;
 line-height: 1.5;
   color: #609bff;
+  margin-bottom: 16px;
 }
 
 .work-title-item-three {
@@ -419,6 +423,57 @@ line-height: 1.5;
   font-size: 24px;
   line-height: 1.5;
   color: #e95d90;
+  margin-bottom: 16px;
+}
+
+.work-text-item {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #8491a0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .work-title {
+    padding-top: 80px;
+  }
+
+.work-text {
+  font-size: 55px;
+}
+
+.work-list {
+  flex-direction: row;
+  gap: 24px;
+  
+}
+
+.work-item {
+  width: calc((100% - 48px) / 3);
+  padding-right: 17px;
+  padding-bottom: 120px;
+}
+
+.work-title-item-one, .work-title-item-two,
+.work-title-item-three {
+margin-bottom: 24px;
+flex-wrap: wrap;
+}
+
+}
+
+@media screen and (min-width: 1296px) {
+
+.work-title { 
+  padding-top: 120px;
+}
+
+.work-item {
+  padding-bottom: 144px;
+}
+
+
 }
 
 
