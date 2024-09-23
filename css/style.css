@@ -478,17 +478,6 @@ button {
   padding: 40px;
 }
 
-@media screen and (min-width: 768px) {
-  .philosophy {
-    flex-direction: row;
-    
-  }
-  .philo-con {
-  width: 50%;
-  /* padding: 40px; */
-  }
-}
-
 
 .philo-title {
   font-weight: 700;
@@ -498,11 +487,72 @@ button {
   margin-bottom: 24px;
 }
 
+.philo-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #5b6876;
+  }
+
+
+  .about{
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #181823;
+      margin-top: 90px;
+      padding-bottom: 51px;
+    }
+    
+    
+    .about:after {
+      content: "";
+      width: 116px;
+      border: 1px solid #8491a0;
+    height: 0;
+    display: block;
+    
+    
+    }
+    
+    
+    .about {
+        cursor: pointer;
+      color: #181823;;
+      }
+
+      .about:hover, .about:focus {
+        color:  #5221e6;
+    
+      }
+
+
+
+
+
 @media screen and (min-width: 768px) {
-  .philo-title {
+  .philosophy {
+    flex-direction: row;
+    
+  }
+  .philo-con {
+  padding: 0 40px;
+  width: 384px
+  ;
+  }
+ .philo-title {
     font-size: 55px;
     padding-top: 80px;
+    
   }
+ 
+  .philo-text {
+    margin-bottom: 67px;
+  }
+
+
+
 }
 
 
@@ -511,41 +561,61 @@ button {
     padding-top: 120px;
   }
 
+.philo-con {
+  width: 50%;
+ 
 }
 
-
-.philo-text {
-font-weight: 400;
-font-size: 18px;
-line-height: 1.5;
-color: #5b6876;
+.philo-img {
+  width: 50%;
 }
-
-.about{
-
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #181823;
-  margin-top: 90px;
-  padding-bottom: 51px;
-}
-
-
-@media screen and (min-width: 768px) {
-  .about {
-    margin-top: 67px;
-    padding-bottom: 84px;
-  }
-}
-
-@media screen and (min-width: 1296px) {
   .about {
     margin-top: 134px;
     padding-bottom: 124px;
   }
 
+
+
 }
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+ 
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  
+}
+
+
+
+
+
+  
+ 
+
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1296px) {
+ 
+
+}
+
+
+
 
 /* #endregion philosophy */
 
